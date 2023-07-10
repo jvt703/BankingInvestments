@@ -1,4 +1,4 @@
-package com.Investing.Investments;
+package dev.n1t;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
