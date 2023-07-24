@@ -6,11 +6,12 @@ import dev.n1t.model.Account;
 import dev.n1t.model.Stock;
 import dev.n1t.repository.StockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+@Service
 public class stockService {
 
     private final StockRepository StockRepository;

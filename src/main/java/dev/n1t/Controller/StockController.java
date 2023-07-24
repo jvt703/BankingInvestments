@@ -19,8 +19,11 @@ public class StockController {
         this.StockService = StockService;
     }
 
-    @GetMapping(path= "Stock")
-    public OutgoingStockDTO getStockbyId(StockIdRequest stockIdRequest){
+    @GetMapping(path= "Stock/{StockId}")
+    public OutgoingStockDTO getStockbyId(
+            @PathVariable(value = "StockId") long StockId
+            ){
+        StockIdRequest stockIdRequest = new StockIdRequest(StockId);
         return StockService.getStock(stockIdRequest);
     }
 
